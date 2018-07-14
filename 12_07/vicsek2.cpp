@@ -11,10 +11,10 @@
 
 using namespace std;
 
-const long long int N=512;
-int steps=200000, near_count;
+const long long int N=2048;
+int steps=20000, near_count;
 double x[N], y[N], vx[N], vy[N], theta[N], mean_ang[N], list_ang[N];
-double L=32, vc=0.5, dt=1, eta=0.15, r=1;
+double L=64, vc=0.5, dt=1, eta=0.15, r=1;
 
 //double unirand(double a, double b); // fn to return uniform random number in (a,b)
 //double dist(double x1, double x2, double y1, double y2, double L); // fn to compute the distance between i th particle and j th particle at periodic boundary condition
@@ -115,7 +115,7 @@ int main(void){
 
 
 	// make "data" directory to store positions and velocities data.
-	mkdir("data", 0755);
+
 
     // seed
     init_genrand((unsigned)time(NULL));

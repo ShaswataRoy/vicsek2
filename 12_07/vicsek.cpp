@@ -11,10 +11,10 @@
 
 using namespace std;
 
-const long long int N=1024;
+const long long int N=2048;
 int steps=300000, near_count;
 double x[N], y[N], vx[N], vy[N], theta[N], mean_ang[N], list_ang[N];
-double L=32, vc=0.5, dt=1, eta=0.15, r=1;
+double L=64, vc=0.5, dt=1, eta=0.15, r=1;
 
 //double unirand(double a, double b); // fn to return uniform random number in (a,b)
 //double dist(double x1, double x2, double y1, double y2, double L); // fn to compute the distance between i th particle and j th particle at periodic boundary condition
@@ -77,7 +77,7 @@ void cal_mean_angle(){
 void filewrite(int iter){
         FILE *fp;
         char filename[20];
-        sprintf(filename, "./data/%d.txt", iter);
+        sprintf(filename, "./data3/%d.txt", iter);
 
         fp = fopen(filename, "w");
         if (fp == NULL) {
