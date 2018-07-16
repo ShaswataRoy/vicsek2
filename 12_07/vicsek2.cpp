@@ -12,7 +12,7 @@
 using namespace std;
 
 const long long int N=2048;
-int steps=20000, near_count;
+int steps=200000, near_count;
 double x[N], y[N], vx[N], vy[N], theta[N], mean_ang[N], list_ang[N];
 double L=64, vc=0.5, dt=1, eta=0.15, r=1;
 
